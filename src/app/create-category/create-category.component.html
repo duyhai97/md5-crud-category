@@ -1,0 +1,23 @@
+<h1>Tạo sản phẩm mới</h1>
+<form [formGroup]="categoryForm" (ngSubmit)="create()">
+  <table>
+    <tr>
+      <td>Mã :</td>
+      <td><input type="number" formControlName="id"></td>
+    </tr>
+    <tr>
+      <td>Tên danh muc:</td>
+      <td><input type="text" formControlName="name"></td>
+    </tr>
+
+    <tr>
+      <td>Mô tả về </td>
+      <td><input type="text" formControlName="description"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button>Tạo mới</button></td>
+    </tr>
+  </table>
+</form>
+
